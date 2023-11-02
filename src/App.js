@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DogPics from "./DogPics";
 
 function App() {
   useEffect(() => {
@@ -7,7 +8,12 @@ function App() {
 
   console.log("Component rendering");
 
-  return <button>Click Me</button>;
+  return (
+    <>
+      <button>Click Me</button>;
+      <DogPics />
+    </>
+  );
 }
 
 export default App;
